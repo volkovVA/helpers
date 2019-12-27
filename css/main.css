@@ -345,7 +345,10 @@ a:focus {
 ul {
   padding: 0; }
 
-.slider-container {
+.arrow {
+  font-size: 30px; }
+
+.slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,18 +359,14 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 50px; }
-
-.arrow {
-  font-size: 30px; }
-
-.slider-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1125px;
-  overflow: hidden;
-  margin: 0 10px; }
-  .slider-one__list {
+  .slider__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1125px;
+    overflow: hidden;
+    margin: 0 10px; }
+  .slider__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -375,7 +374,7 @@ ul {
     color: #444;
     font-size: 30px;
     will-change: right; }
-  .slider-one__item {
+  .slider__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -1,9 +1,11 @@
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#items");
-const computed = getComputedStyle(items);
+/*===== SLIDER-ONE =====*/
 
-right.addEventListener("click", function(e) {
+const leftOne = document.querySelector("#left-one");
+const rightOne = document.querySelector("#right-one");
+const itemsOne = document.querySelector("#slider-one");
+const computed = getComputedStyle(itemsOne);
+
+rightOne.addEventListener("click", function(e) {
   e.preventDefault();
   let currentRight = parseInt(computed.right);
 
@@ -12,11 +14,11 @@ right.addEventListener("click", function(e) {
   }
   
   if (currentRight < 1500) {
-    items.style.right = currentRight + 375 + "px";
+    itemsOne.style.right = currentRight + 375 + "px";
   }
 });
 
-left.addEventListener("click", function(e) {
+leftOne.addEventListener("click", function(e) {
   e.preventDefault();
   let currentRight = parseInt(computed.right);
 
@@ -25,6 +27,35 @@ left.addEventListener("click", function(e) {
   }
 
   if (currentRight > 0) {
-    items.style.right = currentRight - 375 + "px";
+    itemsOne.style.right = currentRight - 375 + "px";
   }
+});
+
+/*===== SLIDER-TWO =====*/
+
+const leftTwo = document.querySelector(".left");
+const rightTwo = document.querySelector(".right");
+const itemsTwo = document.querySelector("#slider-two");
+
+const minRight = 0;
+const maxRight = 1500;
+const step = 375;
+let currentRight = 0;
+
+itemsTwo.style.right = currentRight;
+
+rightTwo.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (currentRight < maxRight) {
+        currentRight += step;
+        itemsTwo.style.right = currentRight + "px";
+    }
+});
+
+leftTwo.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (currentRight > minRight) {
+        currentRight -= step;
+        itemsTwo.style.right = currentRight + "px";
+    }
 });
