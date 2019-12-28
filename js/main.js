@@ -33,8 +33,8 @@ leftOne.addEventListener("click", function(e) {
 
 /*===== SLIDER-TWO =====*/
 
-const leftTwo = document.querySelector(".left");
-const rightTwo = document.querySelector(".right");
+const leftTwo = document.querySelector("#left-two");
+const rightTwo = document.querySelector("#right-two");
 const itemsTwo = document.querySelector("#slider-two");
 
 const minRight = 0;
@@ -59,3 +59,26 @@ leftTwo.addEventListener("click", function(e) {
         itemsTwo.style.right = currentRight + "px";
     }
 });
+
+/*===== SLIDER-THREE =====*/
+
+const left = document.querySelector("#left-three");
+const right = document.querySelector("#right-three");
+const items = document.querySelector("#slider-three");
+
+right.addEventListener("click", function(e) {
+  loop("right", e);
+});
+ 
+left.addEventListener("click", function(e) {
+  loop("left", e);
+});
+
+function loop(direction, e) {
+  e.preventDefault();
+  if (direction === "right") {
+    items.appendChild(items.firstElementChild);
+  } else {
+    items.insertBefore(items.lastElementChild, items.firstElementChild);
+  }
+}

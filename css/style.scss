@@ -1,12 +1,21 @@
 .arrow {
-  font-size: 30px;
+  font-size: 50px;
+}
+
+.slider-container {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slider {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   &__box {
   display: flex;
   width: 1125px;
@@ -16,8 +25,6 @@
   &__list {
     display: flex;
     position: relative;
-    color: #444;
-    font-size: 30px;
     will-change: right;
   }
   &__item {
