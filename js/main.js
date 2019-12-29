@@ -1,7 +1,9 @@
-const openButton = document.querySelector("#openOverlay");
+/*===== POPUP-ONE =====*/
+
+const openButtonOne = document.querySelector("#openOverlayOne");
 const successOverlay = createOverlay('<img src="../img/piter.jpg">');
 
-openButton.addEventListener("click", function() {
+openButtonOne.addEventListener("click", function() {
   document.body.appendChild(successOverlay);
 });
 
@@ -33,6 +35,38 @@ function createOverlay(content) {
   overlayElement.appendChild(containerElement);
   containerElement.appendChild(closeElement);
   containerElement.appendChild(contentElement);
+
+  return overlayElement;
+}
+
+/*===== POPUP-TWO =====*/
+
+const openButtonTwo = document.querySelector("#openOverlayTwo");
+
+openButtonTwo.addEventListener("click", function() {
+  document.body.appendChild(successOverlay);
+});
+
+function createOverlay(content) {
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
+
+  const template = document.querySelector("#overlayTemplate");
+  overlayElement.innerHTML = template.innerHTML;
+  overlayElement.addEventListener("click", function(e) {
+    if (e.target === overlayElement) {
+      closeElement.click();
+    }
+  });
+
+  const closeElement = overlayElement.querySelector(".close");
+  closeElement.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.body.removeChild(overlayElement);
+  });
+
+  const contentElement = overlayElement.querySelector(".content");
+  contentElement.innerHTML = content;
 
   return overlayElement;
 }

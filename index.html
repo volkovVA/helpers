@@ -10,7 +10,16 @@
 <body>
     <div class="container">
         <div class="popup-one">
-            <button id="openOverlay" class="popup-one__btn">Open popup-one</button>
+            <button id="openOverlayOne" class="popup-one__btn">Open popup-one</button>
+        </div>
+        <div class="popup-two">
+            <button id="openOverlayTwo" class="popup-two__btn">Open popup-two</button>
+            <script id="overlayTemplate">
+                <div class="popup">
+                    <a class="close" href="#">x</a>
+                    <div class="content"></div>
+                </div>
+            </script>
         </div>
     </div>
     <script src="./js/main.js"></script>

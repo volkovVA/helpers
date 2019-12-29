@@ -3,7 +3,6 @@
   background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
-  
 }
 
 .popup-one {
@@ -41,8 +40,8 @@
   font: 16px Helvetica, sans-serif;
   color: $white;
   position: absolute;
-  right: -5px;
-  top: -10px;
+  right: -8px;
+  top: -9px;
   background: $red;
   border-radius: 50%;
   width: 20px;
@@ -52,7 +51,12 @@
   text-decoration: none;
 }
 
-
+.popup-two {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
 
 
 
