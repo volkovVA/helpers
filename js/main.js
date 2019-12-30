@@ -42,7 +42,7 @@ function createOverlay(content) {
 /*===== POPUP-TWO =====*/
 
 const openButtonTwo = document.querySelector("#openOverlayTwo");
-const successOverlayTwo = createOverlay('<img src="../img/piter.jpg">');
+const successOverlayTwo = createOverlay('<img src="../img/сolosseum.jpg">');
 
 openButtonTwo.addEventListener("click", function() {
   document.body.appendChild(successOverlayTwo);
@@ -50,7 +50,7 @@ openButtonTwo.addEventListener("click", function() {
 
 function createOverlay(content) {
   const overlayElementTwo = document.createElement("div");
-  overlayElementTwo.classList.add("overlay");
+  overlayElementTwo.classList.add("overlay-two");
 
   const templateTwo = document.querySelector("#overlayTemplateTwo");
   overlayElementTwo.innerHTML = templateTwo.innerHTML;
@@ -80,7 +80,7 @@ const overlayThree = createOverlayThree(templateThree);
 
 openButtonThree.addEventListener("click", function() {
   overlayThree.open();
-  overlayThree.setContent('<img src="../img/piter.jpg">');
+  overlayThree.setContent('<img src="../img/turret.jpg">');
 });
 
 function createOverlayThree(templateThree) {
@@ -88,7 +88,7 @@ function createOverlayThree(templateThree) {
 
   fragment.innerHTML = templateThree;
 
-  const overlayElementThree = fragment.querySelector(".overlay");
+  const overlayElementThree = fragment.querySelector(".overlay-three");
   const contentElementThree = fragment.querySelector(".content");
   const closeElementThree = fragment.querySelector(".close");
   
@@ -113,3 +113,24 @@ function createOverlayThree(templateThree) {
     }
   };
 }
+
+/*===== POPUP-FOUR =====*/
+
+const openButtonFour = document.querySelector("#openOverlayFour");
+const overlayElementFour = document.querySelector(".overlay-four");
+
+openButtonFour.addEventListener("click", function() {
+  overlayElementFour.style.display = "flex";
+});
+
+const closeElementFour = overlayElementFour.querySelector(".close");
+closeElementFour.addEventListener("click", function(e) {
+  e.preventDefault();
+  overlayElementFour.style.display = "none";
+});
+
+overlayElementFour.addEventListener("click", function(e) {
+  if (e.target === overlayElementFour) {
+    closeElementFour.click();
+  }
+});

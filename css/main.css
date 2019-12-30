@@ -335,17 +335,10 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh; }
 
-.popup-one {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
 .popup {
   position: relative; }
 
-.overlay {
+.overlay, .overlay-two, .overlay-three, .overlay-four {
   position: fixed;
   top: 0;
   left: 0;
@@ -362,6 +355,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
   z-index: 9999; }
+
+.overlay-four {
+  display: none; }
 
 .content {
   -webkit-box-sizing: content-box;
@@ -385,6 +381,13 @@ body {
   text-align: center;
   text-decoration: none; }
 
+.popup-one {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .popup-two {
   position: absolute;
   top: 50%;
@@ -397,6 +400,14 @@ body {
   position: absolute;
   top: 50%;
   left: 20%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.popup-four {
+  position: absolute;
+  top: 50%;
+  left: 30%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }

@@ -5,17 +5,11 @@
   height: 100vh;
 }
 
-.popup-one {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .popup {  
   position: relative;
 }
 
-.overlay {
+.overlay, .overlay-two, .overlay-three, .overlay-four {
   position: fixed;
   top: 0;
   left: 0;
@@ -26,6 +20,12 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+}
+
+.overlay-four {
+
+  display:none;
+  
 }
 
 .content {
@@ -51,6 +51,12 @@
   text-decoration: none;
 }
 
+.popup-one {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .popup-two {
   position: absolute;
   top: 50%;
@@ -62,6 +68,13 @@
   position: absolute;
   top: 50%;
   left: 20%;
+  transform: translateY(-50%);
+}
+
+.popup-four {
+  position: absolute;
+  top: 50%;
+  left: 30%;
   transform: translateY(-50%);
 }
 
