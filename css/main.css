@@ -392,3 +392,11 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.popup-three {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
