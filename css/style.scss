@@ -1,8 +1,13 @@
 .container {
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #CAC531;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
   height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 
 .popup {  
@@ -20,12 +25,6 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-}
-
-.overlay-four {
-
-  display:none;
-  
 }
 
 .content {
@@ -51,34 +50,43 @@
   text-decoration: none;
 }
 
-.popup-one {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+button {
+	text-align: center;
+	width: 200px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-align: center;
+	line-height: 3em; 
+	margin: 0 auto;
+	cursor:pointer;
+	padding:3px 10px;
+  text-decoration:none;
+  outline: none;
+	color: $white;
+	font-size:13px;
+	text-shadow:0 -1px 1px rgba(0,0,0,.3);
+	background-image:-webkit-linear-gradient(#52A8E8, #377AD0);
+	background-image:-moz-linear-gradient(0% 100% 90deg,#377AD0, #52A8E8);
+	background-image: -o-linear-gradient(rgb(82,168,232),rgb(55,122,208));
+	background-color:#52A8E8;
+	-moz-border-radius:23px;
+	-webkit-border-radius:23px;
+	border-radius:23px;
+	border:1px solid #20559A;
+	box-shadow:0 1px 2px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.3);
+}
+ 
+button:hover, button:focus{
+	background-image:-webkit-linear-gradient(#54A1D8, #1967CA);
+	background-image:-moz-linear-gradient(0% 100% 90deg,#1967CA, #54A1D8);
+	background-image: -o-linear-gradient(rgb(84,161,216),rgb(25,103,202));
+	box-shadow:0 1px 0 rgba(255,255,255,.6), inset 0 1px 0 rgba(255,255,255,.3);
 }
 
-.popup-two {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
+button:active{
+	background-color:#2D7CD1;
+	box-shadow:0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5);
 }
-
-.popup-three {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translateY(-50%);
-}
-
-.popup-four {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translateY(-50%);
-}
-
-
 
 
 

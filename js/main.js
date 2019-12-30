@@ -1,7 +1,7 @@
 /*===== POPUP-ONE =====*/
 
 const openButtonOne = document.querySelector("#openOverlayOne");
-const successOverlayOne = createOverlay('<img src="../img/piter.jpg">');
+const successOverlayOne = createOverlay('<img src="./img/piter.jpg">');
 
 openButtonOne.addEventListener("click", function() {
   document.body.appendChild(successOverlayOne);
@@ -42,7 +42,7 @@ function createOverlay(content) {
 /*===== POPUP-TWO =====*/
 
 const openButtonTwo = document.querySelector("#openOverlayTwo");
-const successOverlayTwo = createOverlay('<img src="../img/сolosseum.jpg">');
+const successOverlayTwo = createOverlay('<img src="./img/сolosseum.jpg">');
 
 openButtonTwo.addEventListener("click", function() {
   document.body.appendChild(successOverlayTwo);
@@ -80,7 +80,7 @@ const overlayThree = createOverlayThree(templateThree);
 
 openButtonThree.addEventListener("click", function() {
   overlayThree.open();
-  overlayThree.setContent('<img src="../img/turret.jpg">');
+  overlayThree.setContent('<img src="./img/turret.jpg">');
 });
 
 function createOverlayThree(templateThree) {
