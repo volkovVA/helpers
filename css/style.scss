@@ -2,7 +2,7 @@
   background: #CAC531;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
 
   height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@
   padding-top: 50px;
 }
 
-.popup {  
+.popup {
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,10 +53,10 @@
 button {
 	text-align: center;
 	width: 200px;
-	overflow: hidden; 
-	white-space: nowrap; 
+	overflow: hidden;
+	white-space: nowrap;
 	text-align: center;
-	line-height: 3em; 
+	line-height: 3em;
 	margin: 0 auto;
 	cursor:pointer;
 	padding:3px 10px;
@@ -75,7 +75,7 @@ button {
 	border:1px solid #20559A;
 	box-shadow:0 1px 2px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.3);
 }
- 
+
 button:hover, button:focus{
 	background-image:-webkit-linear-gradient(#54A1D8, #1967CA);
 	background-image:-moz-linear-gradient(0% 100% 90deg,#1967CA, #54A1D8);
@@ -90,6 +90,5 @@ button:active{
 
 
 
-  
-  
-  
+
+
