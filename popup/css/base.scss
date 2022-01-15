@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body { 
+  height: 100%;
+  font-size: 16px;   
+}
+
+body {
+	position: relative; 
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.42; 
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
