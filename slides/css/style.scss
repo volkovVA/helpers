@@ -1,0 +1,45 @@
+.arrow {
+  font-size: 50px;
+}
+
+.slider-container {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+  display: flex;
+  width: 1125px;
+  overflow: hidden;
+  margin: 0 10px;
+  }
+  &__list {
+    display: flex;
+    position: relative;
+    will-change: right;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: 250px;
+  }
+}
+
+
+
+
+
+  
+  
+  
