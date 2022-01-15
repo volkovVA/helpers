@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slides</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="popup-one">
+            <button id="openOverlayOne" class="popup-one__btn">Open popup-one</button>
+        </div>
+        <div class="popup-two">
+            <button id="openOverlayTwo" class="popup-two__btn">Open popup-two</button>
+            <script id="overlayTemplateTwo">
+                <div class="popup">
+                    <a class="close" href="#">x</a>
+                    <div class="content"></div>
+                </div>
+            </script>
+        </div>
+        <div class="popup-three">
+            <button id="openOverlayThree" class="popup-three__btn">Open popup-three</button>
+            <script id="overlayTemplateThree">
+                <div class="overlay-three">
+                    <div class="popup">
+                        <a class="close" href="#">x</a>
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </script>
+        </div>
+        <div class="popup-four">
+            <button id="openOverlayFour" class="popup-four__btn">Open popup-four</button>
+        </div>
+    </div>
+    <div style="display:none;" class="overlay-four">
+        <div class="popup">
+          <a class="close" href="#">x</a>
+          <div class="content">
+            <img src="./img/temple.jpg" alt="дворец">
+          </div>
+        </div>
+    </div>
+    <script src="./js/popup-one.js"></script>
+    <script src="./js/popup-two.js"></script>
+    <script src="./js/popup-three.js"></script>
+    <script src="./js/popup-four.js"></script>
+</body>
+</html>
